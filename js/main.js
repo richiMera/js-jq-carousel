@@ -37,6 +37,7 @@ $(document).ready(
         $(".first").addClass("active");
       }
     );
+
     $(".fa-circle:last-child").click(
       function() {
         $("img").removeClass("active");
@@ -44,6 +45,24 @@ $(document).ready(
         $(".last").addClass("active");
       }
     );
+
+    $(".fa-circle:first-child").next().click(
+      function() {
+        $("img").removeClass("active");
+        $(".fa-circle").removeClass("active");
+        $(".first").next().addClass("active");
+      }
+    );
+
+    $(".fa-circle:last-child").prev().click(
+      function() {
+        $("img").removeClass("active");
+        $(".fa-circle").removeClass("active");
+        $(".last").prev().addClass("active");
+      }
+    );
+
+
 
 
     function rightCarousel() {
