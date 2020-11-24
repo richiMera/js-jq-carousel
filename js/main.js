@@ -30,6 +30,22 @@ $(document).ready(
       }
     );
 
+    $(".fa-circle:first-child").click(
+      function() {
+        $("img").removeClass("active");
+        $(".fa-circle").removeClass("active");
+        $(".first").addClass("active");
+      }
+    );
+    $(".fa-circle:last-child").click(
+      function() {
+        $("img").removeClass("active");
+        $(".fa-circle").removeClass("active");
+        $(".last").addClass("active");
+      }
+    );
+
+
     function rightCarousel() {
       var activeImage = $(".images img.active");
       var activeIcon = $(".fa-circle.active")
@@ -62,6 +78,11 @@ $(document).ready(
 
 
     };
+
+    function circleClickToImage() {
+      var clickCircle = $(".fa-circle");
+      clickCircle.this()
+    }
 // ____________________________________-----__________
   }
 )
