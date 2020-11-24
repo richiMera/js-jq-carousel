@@ -30,6 +30,7 @@ $(document).ready(
       }
     );
 
+
     $(".fa-circle:first-child").click(
       function() {
         $("img").removeClass("active");
@@ -98,10 +99,7 @@ $(document).ready(
 
     };
 
-    function circleClickToImage() {
-      var clickCircle = $(".fa-circle");
-      clickCircle.this()
-    }
+
 // ____________________________________-----__________
   }
 )
